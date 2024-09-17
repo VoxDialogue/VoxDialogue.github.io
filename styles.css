@@ -1,0 +1,137 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#selection-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#scenario-select {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.dialogue-category {
+    margin-bottom: 30px;
+}
+
+.dialogue-category h2 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.dialogue-category .dialogue-list {
+    display: none;
+    margin-top: 10px;
+}
+
+.dialogue {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.dialogue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dialogue-header h3 {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.dialogue-header button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dialogue-header button:hover {
+    background-color: #45a049;
+}
+
+.dialogue-contents {
+    display: none;
+    margin-top: 10px;
+}
+
+.turn {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.turn:first-child {
+    border-top: none;
+}
+
+.turn .speaker {
+    font-weight: bold;
+}
+
+.turn .content {
+    margin: 5px 0;
+}
+
+audio {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #scenario-select {
+        width: 90%;
+    }
+
+    .dialogue-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dialogue-header button {
+        margin-top: 10px;
+    }
+}
